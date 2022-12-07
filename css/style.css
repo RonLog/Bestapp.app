@@ -95,7 +95,7 @@ main button:hover {
 }
 
 .main2 {
-  background-image: url("./img/apphomeheadbackimg.png");
+  background-image: url("../img/apphomeheadbackimg.png");
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
