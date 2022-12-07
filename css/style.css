@@ -1,0 +1,490 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+header label,
+header input[type="checkbox"] {
+  display: none;
+}
+
+.logo {
+  flex-grow: 2;
+  padding: 0px 100px;
+}
+
+.logo h2 a {
+  font-weight: bold;
+  background: linear-gradient(to right,
+      rgb(248, 68, 155) 55%,
+      rgb(145, 0, 133) 45%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+nav {
+  flex-grow: 1;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main span {
+  color: rgb(250, 50, 147);
+}
+
+main button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: linear-gradient(to left,
+      rgb(250, 50, 147),
+      rgb(154, 60, 146));
+  font-size: large;
+  font-weight: bold;
+  color: white;
+  border: hidden;
+}
+
+main button:hover {
+  cursor: pointer;
+  border: 1px solid rgb(145, 0, 133);
+  border: visible;
+  background: linear-gradient(to left,
+      rgb(248, 68, 155) 20%,
+      rgb(145, 0, 133) 50%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.main1 {
+  flex-basis: 30%;
+  margin: 50px auto;
+  padding: 50px;
+}
+
+.main2 {
+  text-align: right;
+  flex-basis: 50%;
+  display: flex;
+  height: 500px;
+  width: 100vw;
+}
+
+.main2 {
+  background-image: url("/img/apphomeheadbackimg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+
+.main2 {
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+
+.bounce {
+  align-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  margin: 0 0 0 auto;
+  transform-origin: bottom;
+  height: 400px;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: linear;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.contacts {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts h1 {
+  flex-basis: 100%;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(rgb(250, 50, 147), rgb(154, 60, 146));
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.contact1 {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 80vh;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.contact1 img {
+  height: auto;
+  width: auto;
+}
+
+.contact2 {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 80vh;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.contact2 input[type="text"] {
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.contact2 input[type="email"] {
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.contact2 textarea {
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.contact2 button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: linear-gradient(to right,
+      rgb(120, 60, 149),
+      rgb(250, 50, 147));
+  font-weight: bold;
+  color: white;
+  border: none;
+  width: 200px;
+}
+
+.contact2 button:hover {
+  cursor: pointer;
+  border: 1px solid rgb(145, 0, 133);
+  border: visible;
+  background: linear-gradient(to left,
+      rgb(248, 68, 155),
+      rgb(145, 0, 133));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.buttons button {
+  margin: 5px;
+}
+
+.buttons button img {
+  vertical-align: bottom;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+blockquote {
+  margin: 0;
+}
+
+blockquote::after {
+  content: "\201d";
+  color: rgb(255, 193, 223);
+  font-size: 20em;
+  display: block;
+  margin-bottom: -230px;
+  margin-right: -200px;
+  margin-top: -140px;
+}
+
+.features h1 {
+  flex-basis: 100%;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(rgb(250, 50, 147), rgb(154, 60, 146));
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.feature {
+  flex-basis: 20%;
+  margin: 15px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid lightgray;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.7s;
+}
+
+.feature:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.feature button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  background: linear-gradient(to left,
+      rgb(250, 50, 147),
+      rgb(154, 60, 146));
+  font-weight: bold;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.feature button:hover {
+  cursor: pointer;
+  border: 1px solid rgb(145, 0, 133);
+  border: visible;
+  background: linear-gradient(to left,
+      rgb(248, 68, 155) 40%,
+      rgb(145, 0, 133) 50%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.feature h3 {
+  color: rgb(250, 50, 147);
+  font-weight: bold;
+}
+
+.feature h2 {
+  color: rgb(250, 50, 147);
+  font-weight: bold;
+}
+
+.feature h1 span {
+  font-size: large;
+}
+
+.feature ul {
+  list-style: none;
+}
+
+.feature ul li .feature ul li:nth-child(2) {
+  padding: 5px;
+}
+
+.feature ul li:nth-child(3) {
+  padding: 5px;
+}
+
+.feature span {
+  color: rgb(150, 29, 150);
+}
+
+.price {
+  border: 1px solid rgb(250, 50, 147);
+}
+
+footer {
+  background: linear-gradient(to left,
+      rgb(250, 50, 147),
+      rgb(154, 60, 146));
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* min-height: 100px; */
+}
+
+.footleft i {
+  margin: 10px 10px;
+  border-radius: 3px;
+}
+
+.footleft i:hover {
+  color: rgb(252, 80, 163);
+}
+
+.footright span {
+  display: inline-block;
+  margin: 10px 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav label {
+  display: block;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(252, 80, 163);
+}
+
+#hom:checked~nav .hom,
+#feture:checked~nav .feture,
+#aboot:checked~nav .aboot,
+#reviev:checked~nav .reviev,
+#prise:checked~nav .prise,
+#contect:checked~nav .contect {
+  background-color: #fc50a3;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+.content {
+  display: none;
+}
+
+#hom:checked~.content1,
+#feture:checked~.content2,
+#aboot:checked~.content3,
+#reviev:checked~.content4,
+#prise:checked~.content5,
+#contect:checked~.content6 {
+  display: flex;
+}
+
+@media all and (max-width: 800px) {
+  .logo {
+    padding: 0px;
+    text-align: center;
+  }
+
+  .contact1 {
+    padding: 0;
+  }
+
+  .contact2 {
+    flex-grow: 1;
+  }
+
+  header>label {
+    display: block;
+  }
+
+  header>label::before {
+    content: "\2261";
+    font-size: 40px;
+    color: rgb(250, 50, 147);
+  }
+
+  header>input[type="checkbox"]:checked+label::before {
+    content: "\00d7";
+  }
+
+  nav {
+    display: none;
+  }
+
+  header>input[type="checkbox"]:checked~nav {
+    display: block;
+    display: flex;
+  }
+
+  nav {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+
+  main {
+    margin-top: 0px;
+  }
+
+  .main1 {
+    padding: 0px;
+  }
+
+  .main2 img,
+  .contact1 img {
+    width: 100vw;
+  }
+
+  .feature {
+    flex-basis: 100%;
+  }
+
+  blockquote::after {
+    display: table;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .footleft {
+    flex: 100%;
+    text-align: center;
+  }
+
+  .footright {
+    flex: 100%;
+    text-align: center;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background-color: white;
+  }
+}
